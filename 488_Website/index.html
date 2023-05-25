@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="script.js"></script>
+        <title>488 Landing Page</title>
+    </head>
+    <body>
+        <h1 class="title">CMPSC 488 Project Landing Page</h1>
+        <div class="screen">
+            <div class="gridContainer">
+                <div class="gridItem turtleBot_Video">
+                    <p class="tabTitle">turtleBot_Video</p>
+                    <div class="videoFrame">
+                        <div class="videoFeed">
+                            <iframe class="video" src="https://www.youtube.com/embed/z-1Bs9hCrKU" scrolling="no" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:95%;width:95%;border:none;overflow:hidden;">
+                            Error displaying Video Feed.
+                            </iframe>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="gridItem turtleBot_LiDAR">
+                    <p class="tabTitle">turtleBot_LiDAR</p>
+                    <div class="lidarFrame">
+                        <div class="lidarFeed">
+                            <img class="lidar" src="https://automaticaddison.com/wp-content/uploads/2019/11/turtlebot3-simulation.gif" scrolling="no" style="height:100%;width:100%;">
+                      
+                        </div>
+                    </div>
+                </div>
+                <div class="gridItem imageOverride">
+                    <p class="tabTitle">imageOverride</p>
+                    <div class="overrideFrame">
+                        <div class="overrideFeed">
+                            <img class="override" src="" scrolling="no" style="height:95%;width:95%;border:none;overflow:hidden;">
+                        </div>
+                    </div>
+                    <div class="overrideResponse">
+                        <div data-state = "inactive" class="overrideButton confirm">Confirm</div>
+                        <div data-state = "inactive" class="overrideButton reject">Reject</div>
+                        <div data-state = "inactive" class="overrideButton rescan">Rescan</div>
+                    </div>
+                </div>
+                <div class="gridItem wasdControls">
+                    <p class="tabTitle">wasdControls</p>
+                    <div class="wasdKeys">
+                        <p data-state = "inactive" class="wKey controlKey">W</p>
+                        <p data-state = "inactive" class="aKey controlKey">A</p>
+                        <p data-state = "inactive" class="sKey controlKey">S</p>
+                        <p data-state = "inactive" class="dKey controlKey">D</p>
+                    </div>
+                </div>
+                <div class="gridItem pauseScan">
+                    <p class="tabTitle">pauseScan</p>
+                    <div class="pauseMenu">
+                        <div data-state = "paused" class="pauseUnpause">Play</div>
+                    </div>
+                </div>
+                <div class="gridItem returnHome">
+                    <p class="tabTitle">returnHome</p>
+                    <div class="returnMenu">
+                        <div data-state = "exploring" class="returnButton">Return to Commander</div>
+                    </div>
+                </div>
+                <div class="gridItem updateTab">
+                    <p class="tabTitle">updateTab</p>
+                    <div class="updateList">
+                        <ol class="list">
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

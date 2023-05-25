@@ -1,0 +1,326 @@
+body {
+	background-color: rgba(0, 0, 0, 1);
+	;
+}
+
+.title {
+	color: rgba(0, 255, 0, 1);
+	font-size: large;
+	display: flex;
+	justify-content: center;
+}
+
+.screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gridContainer {
+	display: grid;
+
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+	gap: 0px;
+	width: 90vw;
+	height: 90vh;
+}
+
+.gridItem {
+	background-color: rgba(255, 255, 255, 1);
+	border: solid;
+	border-color: rgba(0, 0, 0, 1);
+	;
+}
+
+.tabTitle {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.turtleBot_Video {
+	grid-row-start: 1;
+	grid-column-start: 2;
+
+	grid-row-end: 3;
+	grid-column-end: 6;
+}
+
+.videoFrame {
+	display: flex;
+	width: 100%;
+	height: 90%;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.videoFeed {
+	display: flex;
+	width: 80%;
+	height: 80%;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 1);
+	border: .25rem solid rgba(255, 0, 0, 1);
+	border-radius: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.turtleBot_LiDAR {
+	grid-row-start: 3;
+	grid-column-start: 2;
+
+	grid-row-end: 5;
+	grid-column-end: 4;
+}
+
+.lidarFrame {
+	display: flex;
+	width: 100%;
+	height: 90%;
+	justify-content: center;
+	align-items: center;
+}
+
+.lidarFeed {
+	display: flex;
+	width: 80%;
+	height: 80%;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 1);
+	border: .25rem solid rgba(255, 0, 0, 1);
+	border-radius: 1rem;
+	justify-content: center;
+	align-items: center;
+   overflow: hidden;
+}
+
+.imageOverride {
+	grid-row-start: 3;
+	grid-column-start: 4;
+
+	grid-row-end: 5;
+	grid-column-end: 6;
+}
+
+.overrideFrame {
+	display: flex;
+	width: 70%;
+	height: 70%;
+   margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.overrideFeed {
+	display: flex;
+	width: 80%;
+	height: 80%;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 1);
+	border: .25rem solid rgba(255, 0, 0, 1);
+	border-radius: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.overrideResponse {
+   display: flex;
+   align-items: center;
+   justify-content: center;   
+}
+
+.overrideButton {
+   margin: .25rem;
+   padding: .5rem;
+   border-radius: .2rem;
+}
+
+.overrideButton:hover {
+   margin: .25rem;
+   padding: .5rem;
+   border-radius: .2rem;
+   cursor: pointer;
+	transform: translateY(-.25rem);
+}
+  
+.confirm {
+   background-color: rgba(0, 255, 0, 0.5);
+   border: .15rem solid rgba(0, 50, 0, 0.75);
+}
+
+.reject {
+   background-color: rgba(255, 0, 0, .5); 
+   border: .15rem solid rgba(255, 0, 0, .75); 
+}
+
+.rescan {
+   background-color: rgba(255, 0, 255, .5); 
+   border: .15rem solid rgba(255, 0, 255, .75); 
+}
+
+.wasdControls {
+	grid-row-start: 1;
+	grid-column-start: 6;
+
+	grid-row-end: 2;
+	grid-column-end: 8;
+}
+
+.wasdKeys {
+	display: grid;
+
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+	gap: .5rem;
+	height: 100%;
+}
+
+.controlKey {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 0, 0, 0.5);
+	border: .15rem solid rgba(255, 0, 0, 0.75);
+	border-radius: .5rem;
+	color: rgba(0, 0, 0, 1);
+	width: 100%;
+	height: 100%;
+}
+
+.wKey {
+	grid-row-start: 1;
+	grid-column-start: 3;
+
+	grid-row-end: 2;
+	grid-column-end: 4;
+}
+
+.aKey {
+	grid-row-start: 2;
+	grid-column-start: 2;
+
+	grid-row-end: 3;
+	grid-column-end: 3;
+}
+
+.sKey {
+	grid-row-start: 2;
+	grid-column-start: 3;
+
+	grid-row-end: 3;
+	grid-column-end: 4;
+}
+
+.dKey {
+	grid-row-start: 2;
+	grid-column-start: 4;
+
+	grid-row-end: 3;
+	grid-column-end: 5;
+}
+
+.pauseScan {
+	grid-row-start: 2;
+	grid-column-start: 6;
+
+	grid-row-end: 3;
+	grid-column-end: 8;
+}
+
+.pauseMenu {
+	display: flex;
+	width: 100%;
+	height: 75%;
+	justify-content: center;
+	align-items: center;
+}
+
+.pauseUnpause {
+	background-color: rgba(0, 0, 255, 0.5);
+	border: .15rem solid rgba(0, 0, 255, 0.75);
+	border-radius: .5rem;
+	padding: 1.5rem;
+	font-size: 1.5rem;
+}
+
+.pauseUnpause:hover {
+	background-color: rgba(0, 0, 255, 0.5);
+	border: .15rem solid rgba(0, 0, 255, 0.75);
+	border-radius: .5rem;
+	padding: 1.5rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transform: translateY(-.25rem);
+}
+
+.returnHome {
+	grid-row-start: 3;
+	grid-column-start: 6;
+
+	grid-row-end: 4;
+	grid-column-end: 8;
+}
+
+.returnMenu {
+	display: flex;
+	width: 100%;
+	height: 75%;
+	justify-content: center;
+	align-items: center;
+}
+
+.returnButton {
+	background-color: rgba(0, 0, 255, 0.5);
+	border: .15rem solid rgba(0, 0, 255, 0.75);
+	border-radius: .5rem;
+	padding: 1.5rem;
+	font-size: 1.5rem;
+}
+
+.returnButton:hover {
+	background-color: rgba(0, 0, 255, 0.5);
+	border: .15rem solid rgba(0, 0, 255, 0.75);
+	border-radius: .5rem;
+	padding: 1.5rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transform: translateY(-.25rem);
+}
+
+.updateTab {
+	grid-row-start: 4;
+	grid-column-start: 6;
+
+	grid-row-end: 5;
+	grid-column-end: 8;
+}
+
+.updateList {
+	display: flex;
+	width: 100%;
+	height: 75%;
+	justify-content: center;
+	align-items: center;
+   overflow: hidden;
+}
+
+.list {
+   max-height: 2rem;
+   width: 80%;
+   height: 20%;
+   overflow-y: auto;
+	background-color: rgba(0, 0, 0, .5);
+	border: .15rem solid rgba(0, 0, 0, .75);
+	border-radius: .5rem;
+   padding: 1.5rem;
+}
+
+.list li {
+   transform: translateX(1rem);
+}
